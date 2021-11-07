@@ -8,13 +8,19 @@ body {
     display: none;
 }
 
+.navbar {
+    padding: 16px 30px 16px 30px;
+}
+
 .navbar-brand img {
     width: 34px;
+    margin-left: 10px;
     border-radius: 1000px;
 }
 
 .navbar-collapse .navbar-nav .nav-link {
-    color: white;
+    color: black;
+    margin-right: 30px;
 }
 
 .heroes {
@@ -527,5 +533,17 @@ footer {
     }
     .wrap-fls {
         flex-direction: column;
+    }
+    .navbar {
+        padding: 12px 30px 12px 30px;
+    }
+    .navbar-brand img {
+        width: 34px;
+        margin-left: -10px;
+        border-radius: 1000px;
+    }
+    .navbar-collapse .navbar-nav .nav-link {
+        color: black;
+        margin-right: 30px;
     }
 }

@@ -267,7 +267,7 @@ label {
     font-weight: bold;
 }
 
-.artikel p {
+.artikel .p {
     color: #090829;
     margin-left: 30px;
 }
@@ -422,6 +422,12 @@ footer {
     .aspirasi-right {
         width: 100vw;   
     }
+    .artikel h2 {
+        margin-left: 20px;
+    }
+    .artikel .p {
+        margin-left: 20px;
+    }
     .card {
         width: 90vw;
         margin-right: auto;
@@ -506,11 +512,11 @@ footer {
         height: max-content;
     }
     .fls {
-        width: 96vw;
+        width: 92vw;
         margin-bottom: 30px;
         padding: 10px;
         text-align: center;
-        margin-left: -4px;
+        margin-left: 0px;
     }
     .fls p {
         line-height: 2em;

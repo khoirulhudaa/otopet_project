@@ -404,6 +404,7 @@ footer {
     .hero-left {
         position: relative;
         width: 100vw;
+        padding: 30px;
     }
     .hero-right {
       display: none;
@@ -414,7 +415,8 @@ footer {
         flex-direction: column;
     }
     .aspirasi-left {
-        width: 96vw;
+        width: 100vw;
+        padding: 16px;
         height: max-content;
     }
     .aspirasi-right {
@@ -426,10 +428,14 @@ footer {
         margin-left: auto;
         margin-bottom: 30px;
     }
+    form p {
+        margin-top: 20px;
+        font-size: 30px;
+    }
     .aspirasi-right form {
         background-color: #090829;
         width: 96%;
-        padding: 20px;
+        padding: 0px;
         height: max-content;
         padding-top: 60px;
         margin-left: 10px;
@@ -460,9 +466,19 @@ footer {
     .sosmed {
         margin: 0px;
         height: 70px;
+        display: none;
+    }
+    .sosmed a {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
     .sosmed img {
         width: 40px;
+    }
+    .sosmed h4 {
+        font-size: 17px;
     }
     .www {
         position: relative;
@@ -470,8 +486,8 @@ footer {
         flex-direction: column;
     }
     .www input {
-        width: 89%;
-        margin-left: 0;
+        width: 94%;
+        margin-left: -12px;
     }
     .www label {
         position: relative;
@@ -490,14 +506,18 @@ footer {
         height: max-content;
     }
     .fls {
-        width: 90vw;
-        margin-bottom: 0px;
-        padding: 20px;
+        width: 96vw;
+        margin-bottom: 30px;
+        padding: 10px;
+        text-align: center;
+        margin-left: -4px;
+    }
+    .fls p {
+        line-height: 2em;
         text-align: justify;
-        margin-left: 0;
     }
     .arrow {
-        margin-left: 0;
+        margin-top: 0;
     }
     .wrap-fls {
         flex-direction: column;

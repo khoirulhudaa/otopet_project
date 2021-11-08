@@ -243,6 +243,18 @@ footer {
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.747);
     background-color: rgb(219, 5, 5);
 } 
+.btn-article2 {
+    background-color: var(--danger);
+    transition: 0.3s;
+    display: none;
+}
+
+.btn-article2:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.747);
+    background-color: rgb(219, 5, 5);
+} 
 
 footer {
     padding: 16px;
@@ -293,6 +305,16 @@ a {
         background-color: #09082991;
     }
     
+    .btnn {
+        display: none;
+    }
+
+    .btn-article2 {
+        display: inline;
+        position: relative;
+        left: -30px;
+    }
+
     .card-img2 {
         height: auto;
         width: 100%;

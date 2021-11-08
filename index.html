@@ -11,25 +11,69 @@
     <link rel="stylesheet" href="./assets/style/index.css">
     <link rel="stylesheet" href="./assets/icons/css/all.min.css">
     <title>Otopet website</title>
+    <style>
+      .fa-play {
+        position: absolute;
+        border-radius: 1000px;
+        background-color: #fff;
+        font-size: 40px;
+        width: 70px;
+        height: 70px;
+        left: 50%;
+        top: 40%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.3s;
+        animation: play 1.3s ease infinite;
+      }
+      @keyframes play {
+        0% {
+          transform: scale(1);
+          filter: brightness(100%);
+        }
+        50% {
+          transform: scale(0.9) rotate(10deg);
+          filter: brightness(80%);
+        }
+        100% {
+          transform: scale(1);
+          filter: brightness(100%);
+        }
+      }
+      .fa-play:hover {
+        transform: scale(0.94);
+        filter: brightness(88%);
+        transition: 0.3s;
+      }
+    </style>
 </head>
 <body>
     
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./assets/img/otopet-logo.jpg" alt=""> Otopet</a>
+          <a class="navbar-brand" href="#"><img src="./assets/img/navbar-logo.png" alt=""> Otopet</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav" style="margin-left: auto;">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#profile">Profile</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#aspirasi">Aspirasi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#filosofi">Filosofi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#kegiatan">Kegiatan</a>
+              </li>
+              <li class="nav-item login">
+                <a class="nav-link" href="./login.html" style="color: white;">Login</a>
               </li>
             </ul>
           </div>
@@ -40,16 +84,17 @@
         <div class="hero-left">
           <h1>Otopianus Petrus Tebai</h1>
           <p>Anggota DPD RI terpilih mewakili daerah pemilihan Papua pada Pemilu 2019</p>
-          <button class="btn-danger btn-dangers">Selengkapnya</button>
+          <a href="#profile"><button class="btn-danger btn-dangers">Selengkapnya</button></a>
         </div>
         <div class="hero-right">
-          <video controls="false" autoplay="true">
+          <i class="fas fa-play"></i>
+          <video controls="false" class="video" autoplay="true">
             <source src="./assets/video/alam.mp4" type="video/mp4" />
           </video>
         </div>
       </section>
 
-      <section class="aspirasi">        
+      <section class="aspirasi" id="profile">        
         <div class="aspirasi-left">
           <div class="content-aspirasi">
             <h3>Otopianus Petrus Tebai</h3>
@@ -67,35 +112,35 @@
               menjalani hidup dan kehidupan di Tanah Papua, dengan sederhana. Sejak kecil, Otopet memiliki sejuta mimpi. 
               Salah satu mimpinya adalah ia ingin mengubah Papua dan kehidupan masyarakat di sana menjadi lebih baik
             </p>
-            <button class="btn-danger btn-dangers">Selengkapnya</button>
+            <a href="./profile.html"><button class="btn-danger btn-dangers">Selengkapnya</button></a>
           </div>
         </div>
-        <div class="aspirasi-right">
+        <div class="aspirasi-right" id="aspirasi">
             <form>
               <img src="./assets/img/hero-logo.png" alt="">
-              <p>Salurkan Aspirasi Anda</p>
-              <hr>
+              <p class="pp">Salurkan Aspirasi Anda</p>
+              <hr>          
               <div class="wrap-form">
                 <div class="wrap-form-left">
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">masukan aspirasi anda</label>
+                    <label for="exampleInputEmail1" class="form-label lbl1">masukan aspirasi anda</label>
                     <textarea type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
                   </div>
                   <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Nama</label>
+                    <label for="exampleInputPassword1" class="form-label lbl2">Nama</label>
                     <input type="number" class="form-control" id="exampleInputPassword1">
                   </div>
                   <div class="mb-3 d-flex www">
                     <div>
-                      <label for="exampleInputPassword1" class="form-label">email</label>
+                      <label for="exampleInputPassword1" class="form-label lbl3">email</label>
                       <input type="email" class="form-control" id="exampleInputPassword1">
                     </div>
                     <div>
-                      <label for="exampleInputPassword1" class="form-label">website</label>
+                      <label for="exampleInputPassword1" class="form-label lbl4">website</label>
                       <input type="text" class="form-control" id="exampleInputPassword1">
                     </div>
                   </div>
-                  <button type="submit" class="btn-primary btn-aspirasi" style="width: 80%;">Kirim sekarang</button>
+                  <button type="submit" class="btn-aspirasix">Kirim sekarang</button>
                 </div>
                 <div class="wrap-form-right">
                   <div class="sosmed">
@@ -122,7 +167,7 @@
           </div>
       </section>
 
-      <section class="filosofi">
+      <section class="filosofi" id="filosofi">
         <div class="wrap-fls">
           <div class="fls">
             <img src="./assets/img/search.png" alt="fls">
@@ -160,13 +205,14 @@
         </div>
       </section>
 
-      <section class="artikel">
+      <section class="artikel" id="kegiatan">
         <h2>Info Kegiatan Kami</h2>
         <p class="p">
           Cari tahu yang kami lakukan untuk masyarakat dalam membangun negeri
         </p>
           <div class="wrap-artikel">
             <div class="card">
+                <a href="./detail-article.html">
               <div class="card-img">
                 <img src="./assets/img/jesse-collins-ICXMkhRdquA-unsplash.jpg" alt="img">
               </div>
@@ -174,8 +220,10 @@
                 <p>Papuan pembangunan 5 tahun</p>
                 <span>20 Oktober 2021</span>
               </div>
+            </a>
             </div>
             <div class="card">
+                <a href="./detail-article.html">
               <div class="card-img">
                 <img src="./assets/img/joshua-sukoff-5DDYHjk_KMU-unsplash.jpg" alt="img">
               </div>
@@ -183,8 +231,10 @@
                 <p>Papuan pembangunan 5 tahun</p>
                 <span>20 Oktober 2021</span>
               </div>
+            </a>
             </div>
             <div class="card">
+                <a href="./detail-article.html">
               <div class="card-img">
                 <img src="./assets/img/marco-oriolesi-wqLGlhjr6Og-unsplash.jpg" alt="img">
               </div>
@@ -192,8 +242,10 @@
                 <p>Papuan pembangunan 5 tahun</p>
                 <span>20 Oktober 2021</span>
               </div>
+            </a>
             </div>
           </div>
+          <a href="./article.html" class="ffd"><button class="btn-danger btn-dangers2">Selengkapnya</button></a>
       </section>
 
       <footer>
@@ -267,6 +319,13 @@
           </div>
         </div>
       </div>
+
+      <script>
+        document.querySelector('.video').addEventListener('click', () => {
+          document.querySelector('.fa-play').style.transition = '1s';
+          document.querySelector('.fa-play').style.opacity = 0;
+        })
+      </script>
 
     <script src="bs/js/bootstrap.min.js"></script>
 </body>

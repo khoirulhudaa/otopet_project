@@ -100,6 +100,20 @@ body::-webkit-scrollbar {
     text-align: left;
 }
 
+footer {
+    position: relative;
+    width: 100vw;
+    height: 60px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #090829;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .banner-article::before {
     position: absolute;
     content: '';

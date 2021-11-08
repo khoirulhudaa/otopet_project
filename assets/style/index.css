@@ -4,6 +4,26 @@ body {
     overflow-x: hidden;
 }
 
+.login {
+    background-color: #090829;
+    border-radius: 35px;
+    cursor: pointer;
+    color: white; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.login:hover {
+    transform: scale(0.98);
+    transition: 0.3s;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -61,6 +81,29 @@ body {
     border-radius: 5px;
     outline: none;
     border:none
+}
+
+.btn-dangers2 {
+    position: relative;
+    width: 200px;
+    margin-top: 4px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    outline: none;
+    border:none
+}
+
+.ffd {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card a {
+    color: black;
+    text-decoration: none;
 }
 
 .hero-right {
@@ -174,8 +217,23 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: center;
+}
+
+.lbl1 {
+    margin-left: 10%;
+}
+
+.lbl2 {
+    margin-left: 10%;
+}
+
+.lbl3 {
+    margin-left: 8%;
+}
+
+.lbl4 {
+    margin-left: 8%;
 }
 
 .aspirasi-right textarea {
@@ -209,10 +267,18 @@ form img {
     margin-right: auto;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 form p {
     color: white;
     font-weight: bold;
     font-size: 38px;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-right: auto;
 }
 
 hr {
@@ -223,12 +289,15 @@ hr {
     font-weight: bold;
 }
 
-.btn-aspirasi {
+.btn-aspirasix {
     position: relative;
     margin-top: 30px;
     border-radius: 4px;
     border:none;
+    left: 10%;
     height: 50px;
+    color: white;
+    background-color: rgb(0, 94, 216);
 }
 
 .www {
@@ -292,13 +361,13 @@ label {
 
 .card-img {
     overflow: hidden;
-    height: 78%;
+    height: 85%;
 }
 
 .card-content {
     padding-top: 10px;
     padding-left: 20px;
-    height: 20%;
+    height: 25%;
     padding-bottom: 10px;
 }
 
@@ -309,6 +378,13 @@ label {
 
 .card-content p {
     font-weight: bold;
+    font-size: 24.2px;
+}
+
+.card-content span {
+    position: relative;
+    font-size: 17px;
+    bottom: 14px;
 }
 
 .card img {
@@ -400,6 +476,32 @@ footer {
 @media screen and (max-width: 700px) {
     ::-webkit-scrollbar {
         display: none;
+    }
+    .card-img {
+        overflow: hidden;
+        height: 82%;
+    }
+    .lbl1 {
+        margin-left: 0;
+    }
+    .lbl2 {
+        margin-left: 0;
+    }
+    .lbl3 {
+        margin-left: 0;
+    }
+    .lbl4 {
+        margin-left: 0;
+    }
+    .btn-aspirasix {
+        position: relative;
+        margin-top: 30px;
+        border-radius: 4px;
+        border:none;
+        left: 0%;
+        height: 50px;
+        color: white;
+        background-color: rgb(0, 94, 216);
     }
     .heroes {
         position: relative;

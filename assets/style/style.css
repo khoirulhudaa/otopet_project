@@ -392,12 +392,12 @@ a {
 
     .card {
         position: relative;
-        width: 100%;
+        width: 90vw;
         height: max-content;
         cursor: pointer;
         border-radius: 10px;
         overflow: hidden;
-        margin-left: 0px;
+        margin-left: auto;
         background-size: contain;
         transition: 0.4s;
     }

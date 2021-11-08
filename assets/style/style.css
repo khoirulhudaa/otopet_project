@@ -406,7 +406,7 @@ a {
         display: flex;
         flex-direction: column;
         position: relative;
-        left: -22%;
+        left: -20%;
         margin-bottom: 50px;
         margin-top: 35px;
     }
@@ -431,7 +431,7 @@ a {
     }
 
     .btn-login {
-        width: 80vw;
+        width: 50vw;
     }
 
     .login img {
